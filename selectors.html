@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<style>
+    .heading{
+        color: red;
+        font-size: 60px;
+    }
+    #heading1{
+        color:blue;
+    }
+    .bgcolor{
+        background-color: aqua;
+    }
+    #bgcolor1{
+        background-color: yellow;
+    }
+    *{
+        color: blueviolet;
+        font-size: 20px;
+    }
+    h3,p{color:brown}
+    .heading1,.heading2,.heading3{
+        color: cornflowerblue;
+    }
+    .hm{
+        color: pink;
+    }
+</style>
+<body>
+    <h1 class="heading" id="heading1">hello everyone</h1>
+    <!-- specificity:id,class,element,universal-->
+     <!-- we can give multiple classes but not multiple ids -->
+      <h2 class="heading bgcolor">hi harshada</h2>
+      <h2 id="heading1 bgcolor1">ohh hii</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim molestias vel obcaecati sequi nam in ipsam est porro consequuntur. Blanditiis quisquam fugit reprehenderit officiis fuga ipsum odit cupiditate aliquid!</p>
+      <h3 class="hm">yess i am harshu</h3>
+      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum atque quaerat neque in, recusandae, laboriosam blanditiis voluptatibus tempora repudiandae magnam mollitia iste? Sint alias nulla quae natus, deserunt quisquam?</h5>
+      <h1 class="heading1">hellooo my friends</h1>
+      <h1 class="heading2">hellooo my friends</h1>
+      <h1 class="heading3">hellooo my friends</h1>
+</body>
+</html>
