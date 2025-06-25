@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 20px;
+            gap:10px;
+
+        }
+        .box{
+            background-color: rgb(223, 112, 32);
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            color: white;
+            font-weight:500;
+            font-size:25px;
+            transition: transform 2s ease-out 500ms;
+            text-align: center;
+            justify-content: center;
+
+        }
+        .box1:hover{
+            transform: translate(125px,125px);
+            background-color: black;
+        }
+        .box2:hover{
+            transform:translateX(125px);
+        }
+        .box3:hover{
+            transform:translateY(125px);
+        }
+        .box4:hover{
+            transform: rotate(90deg);
+        }
+        .box5:hover{
+            transform: Skewx(30deg);
+            /* also Skewy in y axis */
+        }
+        .box6:hover{
+            transform: scale(2);
+        }
+        .box7:hover{
+            transform: rotate(90deg) scale(1.4) translateY(50px);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box box1">Translate</div>
+    <div class="box box2">Translatex</div>
+    <div class="box box3">Translatey</div>
+    <div class="box box4">Rotate</div>
+    <div class="box box5">Skewx</div>
+    <div class="box box6">Scale</div>
+    <div class="box box7">Multi Functional</div>
+</div>
+</body>
+</html>
