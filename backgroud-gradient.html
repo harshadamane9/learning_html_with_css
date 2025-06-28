@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=.device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: rgb(250, 243, 243);
+            text-align: center;
+            font-size: 50px;
+        }
+        .linear{
+            height: 500px;
+            border: 2px solid black;
+            background: linear-gradient(to left,black,purple , silver, pink);
+        }
+        .radial{
+            height: 600px;
+            background: radial-gradient(ellipse at center,white,silver,black);
+            border-radius: 30%;
+        }
+        /* radial : ellipse,circle */
+        /* at:center,left-top */
+        .conic{
+            height: 500px;
+            background: conic-gradient(from 30deg, red,green,yellow,blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="conic">Conic Gradient exapmple</div>
+    <div class="radial">Radial Gradient Example</div>
+    <div class="linear">linear gradient
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quos veritatis dignissimos quaerat reiciendis incidunt rerum dicta placeat soluta voluptates ipsum perferendis itaque consequatur quidem sed laboriosam fugiat minima eligendi!</p></div>
+    
+</body>
+</html>
