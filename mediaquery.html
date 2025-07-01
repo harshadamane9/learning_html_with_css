@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            width:100%;
+            height: auto;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            margin: 20px auto;
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+        .info{
+            width:80%;
+            margin:auto;
+            padding: 20px;
+            background-color: rgb(179, 235, 235);
+            color: black;
+            font-size: 18px;
+            border-left: 6px solid grey;
+            margin-bottom: 20px;
+        }
+        .Responsive_image{
+            width: 100%;
+            border: 4px solid red;
+            padding: 30px;
+            max-width: 600px;
+            margin:auto;
+
+        }
+        /* mobile view 480px or less */
+        @media(max-width:480px)
+        {
+            .box{
+                width: 80%;
+                background-color: blue;
+                font-size: 10px;
+                
+            }
+            .info{
+                background-color: rgb(243, 141, 77);
+                color:white;
+            }
+           
+            .Responsive_image{
+                display: none;
+            }
+            /*
+            h2{
+                color: white;
+                text-shadow: 3px 5px 6px yellow;
+            } */
+
+        }
+        @media(max-width:768px)
+        {
+            .box{
+                background-color: rgba(71, 128, 214, 0.849);
+                width: 80%;
+                font-size: 100px;
+            }
+            .info{
+                background-color: rgb(238, 40, 228);
+                color:white;
+            }
+            
+        }
+        /* custom */ 
+        @media(min-width:800px) and (max-width:900px)
+        {
+            .box{
+                background-color: rgba(226, 223, 56, 0.849);
+                width: 80%;
+                font-size: 100px;
+            }
+            .info{
+                background-color: rgb(40, 238, 50);
+                color:white;
+            }
+            
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="box">Responsive Box</div>
+    <div class="info">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis rerum doloremque, eum minus suscipit possimus fugit consectetur iusto eos expedita eligendi fugiat consequuntur iste impedit recusandae ea aliquam. Modi, nobis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae perferendis hic quod alias ullam, similique cumque earum deleniti illum quia ipsam voluptatibus, obcaecati tempore perspiciatis nobis iure nulla assumenda odio?</p>
+        
+        
+    </div>
+    <img src="images/pexels-philippedonn-1133957.jpg" alt="image" class="Responsive_image">
+</body>
+</html>
